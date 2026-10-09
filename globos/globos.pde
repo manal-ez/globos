@@ -1,3 +1,5 @@
+PImage cara;
+
 class Globo
 {
   color c;
@@ -8,14 +10,10 @@ class Globo
    y=_y; 
    vx=random(-0.25,0.25);
    vy=random(-2,-0.5);
-   c = color(random(100,255),
-             random(100,255),
-             random(0,255));
-   
-  }
+   c = color(random(100,255), random(100,255), random(0,255));
+   }
 
-  void update()
-  {
+  void update(){
     y+=vy;
     x+=vx;
   }
@@ -25,6 +23,7 @@ class Globo
     fill(c);
     strokeWeight(3);  
     ellipse(x,y,60,100);
+    image(carita,x,y);
   }
   
 }
@@ -36,6 +35,7 @@ void setup()
 {
   size(640,480);
   globos = new ArrayList<Globo>();  
+  cara = loadImage ("carita.jpeg");
 }
 
 void draw()

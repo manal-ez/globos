@@ -5,5 +5,5 @@ Curso 2026-27
 Grado ingenieria en sistemas de telecomunicaciones
 
 
-Este curso es el primero
+Holi
 

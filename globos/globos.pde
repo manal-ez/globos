@@ -23,11 +23,12 @@ class Globo
     fill(c);
     strokeWeight(3);  
     ellipse(x,y,60,100);
+    imageMode(CENTER);
     image(cara,x,y);
   }
   
 }
-c
+
 ArrayList<Globo> globos;
 
 
